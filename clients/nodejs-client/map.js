@@ -44,6 +44,7 @@ exports.parseBoard = function (board) {
     var map = [];
     var size = board.size;
 
+    map.size = board.size;
     var tiles = board.tiles;
     var x = 0;
     var y = 0;
@@ -73,6 +74,8 @@ exports.parseBoard = function (board) {
             map[x] = [];
         }
     }
+
+    console.log('map', map);
 
     return map;
 };
